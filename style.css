@@ -1,13 +1,17 @@
+body, html {
+    background-color: #151515;
+}
+
 .background-wrapper {
     background-image: url('/src/img/imagem_2025-04-07_161402231.png');
     background-repeat: no-repeat;
     width: 100%;
     background-position: top center;
+    height: 4356px;
     background-attachment: scroll;
     display: flex;
     flex-direction: column;
 }
-
 
 .titulo h1 {
     color: #EF7113;
@@ -16,36 +20,46 @@
     line-height: 1.1;
     font-weight: 700;
     margin-top: 150px;
-    margin-left: 1%;
+    margin-left: 10rem;
 }
 
-
+.section {
+    display: flex;
+    height: 150vh;
+    align-items: center;
+    justify-content: center;
+}
 
 .info-card {
     background-color:#EF7113;
-    width: 100%;
-    padding: 40px 40px;
+    width: 70%;
+    height: 27rem;
     border-radius: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem;
     align-items: center;
     color: black;
-    z-index: 2;
-    margin-top: 10rem;
+    padding: 3rem;
 }
 
 .info-card > :first-child {
-    max-width: 50%;
+    max-width: 100%;
 }
 
+.info-card h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
 
 .info-card p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 .div-img {
-    width: 300px;
-    flex-shrink: 0;
+    width: 22rem;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,12 +69,11 @@
     width: 100%;
     max-width: 300px;
     border-radius: 20px;
-    object-fit: cover;
+    height: auto;
 }
 
-.transformar {
-    margin-top: 20rem;
-
+.meutrabalho {
+    margin-top: -20rem;
 }
 
 .titulo-transformar {
@@ -75,10 +88,13 @@
     gap: 23rem;
     max-width: 1200px;
     margin: 0 auto;
-    margin-left: 150px;
     padding: 4rem 2rem;
     flex-wrap: wrap;
     font-size: 21px;
+}
+
+.div-img-trabalho .texto-trabalho {
+    border: 1px solid red;
 }
 
 .div-img-trabalho {
@@ -88,13 +104,13 @@
 }
 
 .div-img-trabalho img {
-    max-width: 600px;
+    max-width: 440px;
     height: auto;
 }
 
 .texto-trabalho {
     max-width: 700px;
-    font-size: 2rem;
+    font-size: 30px;
 }
 
 
@@ -129,19 +145,9 @@
     margin-left: auto;
 }
 
-.logo p{
-    width: 50px;
+.logo img{
+    width: 40px;
     height: auto;
-}
-
-.section {
-    position: relative;
-    height: 700px;
-    align-items: center;
-    justify-content: center;
-    padding: 150px 5% 0 5%;
-    padding-top: 300px;
-    width: 100%;
 }
 
 .carousel {
@@ -163,12 +169,29 @@ a {
 
 
 footer {
-    margin-top: 10rem;
-    margin-bottom: 150px;
-    padding: 40px 20px;
+    margin-top: auto;
+    margin-left: 10rem;
+    padding: 100px 20px;
     color: #EF7113;
+}
+
+.dados {
+    color: white;
 }
 
 .projetos {
     margin-top: 20rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+.projetos .carousel {
+    margin: 10rem auto 0;
+}
+
+.projetos .carousel-item img {
+    max-height: 440px;
+    width: auto;
+    margin: 0;
+    object-fit: cover;
 }
